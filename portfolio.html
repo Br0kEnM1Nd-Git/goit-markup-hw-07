@@ -26,6 +26,8 @@
 
     <header class="header">
       <div class="container">
+        <!-- Desktop -->
+
         <div class="header-container">
           <nav class="nav">
             <a href="./index.html" class="link logo h-logo"
@@ -33,12 +35,12 @@
             >
             <ul class="nav-ul">
               <li>
-                <a href="./index.html" class="link h-link">Studio</a>
+                <a href="./index.html" class="link current-link h-link"
+                  >Studio</a
+                >
               </li>
               <li>
-                <a href="./portfolio.html" class="link current-link h-link"
-                  >Portfolio</a
-                >
+                <a href="./portfolio.html" class="link h-link">Portfolio</a>
               </li>
               <li><a href="" class="link h-link">Contacts</a></li>
             </ul>
@@ -57,6 +59,88 @@
               </li>
             </ul>
           </address>
+        </div>
+
+        <!-- Mobile -->
+
+        <div class="header-container-mobile">
+          <a href="./index.html" class="link logo h-logo"
+            ><span class="logo-item">Web</span>Studio</a
+          >
+          <button type="button" class="burger-menu-btn js-open-menu">
+            <svg class="burger-menu-icon">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu js-menu-container">
+          <button class="modal-close js-close-menu" type="button">
+            <svg class="modal-close-icon">
+              <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-container">
+            <nav class="nav">
+              <ul class="nav-ul">
+                <li>
+                  <a href="./index.html" class="link h-link">Studio</a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="link h-link">Portfolio</a>
+                </li>
+                <li>
+                  <a href="" class="link current-link h-link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <address>
+              <ul class="address-ul">
+                <li>
+                  <a href="mailto:info@devstudio.com" class="address"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+110001111111" class="address"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="socials">
+              <li class="socials-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
