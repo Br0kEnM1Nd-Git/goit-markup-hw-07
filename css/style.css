@@ -57,7 +57,9 @@ ul {
   color: var(--WHITE);
   font-size: 36px;
   line-height: 1.11;
-  width: 320px;
+  /* width: 320px; */
+  word-wrap: break-word;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -122,12 +124,12 @@ ul {
   width: 100%;
   max-width: 426px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 736px;
   }
 }
 
@@ -221,7 +223,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    /* gap: 40px; */
   }
 }
 
@@ -513,7 +515,7 @@ ul {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--SLATE);
+  background-color: var(--IRIS);
   transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -704,7 +706,7 @@ ul {
 @media (min-width: 1200px) {
   .hero-section {
     padding: 188px 0;
-    width: 1440px;
+    max-width: 1440px;
   }
 }
 
@@ -717,8 +719,10 @@ ul {
 
 /* Our Advantages */
 
-.oa-section {
-  padding-bottom: 0;
+@media (min-width: 1200px) {
+  .oa-section {
+    padding-bottom: 0;
+  }
 }
 
 .our-advantages-li {
@@ -944,7 +948,7 @@ ul {
 
 @media (min-width: 768px) {
   .customers-li {
-    width: calc((100% - 120px) / 3);
+    width: calc((100% - 200px) / 3);
   }
 }
 
